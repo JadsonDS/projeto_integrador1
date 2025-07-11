@@ -4,12 +4,6 @@ import numpy as np
 import json
 import os
 
-import pandas as pd
-import pickle
-import numpy as np
-import json
-import os
-
 class PredictEmprestimo(object):
     def __init__(self):
         base_path = os.path.dirname(__file__)
