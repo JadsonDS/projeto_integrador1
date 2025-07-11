@@ -6,7 +6,8 @@ from flask import Flask, request, jsonify
 
 from empresa.empresa import PredictEmprestimo
 
-model = pickle.load(open('model/final_model.pkl','rb'))
+model_path = os.path.join('model', 'final_model.pkl')
+model = pickle.load(open(model_path, 'rb'))
 
 app = Flask(__name__)
 
